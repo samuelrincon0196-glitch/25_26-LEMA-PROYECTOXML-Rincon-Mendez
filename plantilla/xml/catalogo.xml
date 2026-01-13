@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE empresa SYSTEM "../definiciones/catalogo.dtd">
+<!DOCTYPE empresa SYSTEM "../dtd/catalogo.dtd">
 <empresa nombre="TechSolution" cif="A12345678">
     <catalogo fecha="2025-26">
         <categoria nombre="Componentes">
