@@ -10,7 +10,7 @@
                     <li>
                         <strong><xsl:value-of select="nombre"/></strong><br/>
                         Precio: <xsl:value-of select="precio"/> € | 
-                        Con IVA: <xsl:value-of select="precio * 1.21"/> €
+                        Con IVA: <xsl:value-of name="iva" select="1.21"/> €
                         <br/>
                         <img src="{imagen}" width="100"/> <br/>
                         <a href="{url_ref}">Ver más detalles</a> <xsl:if test="descuento > 0">

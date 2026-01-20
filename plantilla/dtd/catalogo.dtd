@@ -1,11 +1,18 @@
 <!ELEMENT empresa (catalogo)>
-<!ATTLIST empresa 
-          nombre CDATA #REQUIRED
-          cif CDATA #FIXED "A12345678"> <!ELEMENT catalogo (categoria+)> <!ATTLIST catalogo fecha CDATA #IMPLIED> <!ELEMENT categoria (producto*)> <!ATTLIST categoria nombre CDATA #REQUIRED>
+<!ATTLIST empresa
+    nombre CDATA #REQUIRED
+    cif CDATA #REQUIRED>
+<!ELEMENT catalogo (categoria+)>
+<!ATTLIST catalogo fecha CDATA #REQUIRED>
 
-<!ELEMENT producto (nombre, precio, descuento?, imagen, url_ref)> <!ATTLIST producto 
-          id ID #REQUIRED 
-          stock (si|no) "si"> <!ELEMENT nombre (#PCDATA)>
+<!ELEMENT categoria (producto*)>
+<!ATTLIST categoria nombre CDATA #REQUIRED>
+
+<!ELEMENT producto (nombre, precio, descuento?, imagen, url_ref)>
+<!ATTLIST producto
+    id ID #REQUIRED
+    stock (si|no) "si">
+<!ELEMENT nombre (#PCDATA)>
 <!ELEMENT precio (#PCDATA)>
 <!ATTLIST precio moneda CDATA #FIXED "EUR">
 
