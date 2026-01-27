@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:element name="empresa">
+    <!-- ELEMENTOS SIMPLES -->
+    <xs:simpleType name="tipoStock">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="si" />
+            <xs:enumeration value="no" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoMoneda">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="EUR" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCIF">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]\d{8}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoFecha">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}-\d{2}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- ELEMENTOS COMPLEJOS-->
+    <xs:element name="empresa">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="catalogo">
@@ -13,36 +40,41 @@
                                         <xs:element name="producto" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="nombre" type="xs:string"/>
+                                                    <xs:element name="nombre" type="xs:string" />
                                                     <xs:element name="precio">
                                                         <xs:complexType>
                                                             <xs:simpleContent>
                                                                 <xs:extension base="xs:decimal">
-                                                                    <xs:attribute name="moneda" type="xs:string" use="required"/>
+                                                                    <xs:attribute name="moneda"
+                                                                        type="tipoMoneda"
+                                                                        use="required" />
                                                                 </xs:extension>
                                                             </xs:simpleContent>
                                                         </xs:complexType>
                                                     </xs:element>
-                                                    <xs:element name="descuento" type="xs:integer"/>
-                                                    <xs:element name="imagen" type="xs:string"/>
-                                                    <xs:element name="url_ref" type="xs:anyURI"/>
+                                                    <xs:element name="descuento" type="xs:integer"
+                                                        minOccurs="0" />
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                    <xs:element name="url_ref" type="xs:anyURI" />
                                                 </xs:sequence>
-                                                <xs:attribute name="id" type="xs:string" use="required"/>
-                                                <xs:attribute name="stock" type="xs:string" use="required"/>
+                                                <xs:attribute name="id" type="xs:string"
+                                                    use="required" />
+                                                <xs:attribute name="stock" type="tipoStock"
+                                                    use="required" />
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="nombre" type="xs:string" use="required"/>
+                                    <xs:attribute name="nombre" type="xs:string" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="fecha" type="xs:string" use="required"/>
+                        <xs:attribute name="fecha" type="tipoFecha" use="required" />
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
-            <xs:attribute name="nombre" type="xs:string" use="required"/>
-            <xs:attribute name="cif" type="xs:string" use="required"/>
+            <xs:attribute name="nombre" type="xs:string" use="required" />
+            <xs:attribute name="cif" type="tipoCIF" use="required" />
         </xs:complexType>
-      </xs:element>
+    </xs:element>
 
 </xs:schema>
