@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalogo.xsl"?>
+<!--COMIENZO
+DEL XML-->
+<empresa nombre="TechSolution" cif="A12345678">
+
+    <!--COMIENZO
+    DEL CATALOGO-->
+    <catalogo fecha="2025-26">
+
+        <!--COMIENZO
+        DE LA PRIMER CATEGORIA-->
+        <categoria nombre="Componentes">
+            <!--PRODUCTO
+            1-->
+            <producto id="p01" stock="si">
+                <nombre>Tarjeta Gráfica RTX 4060</nombre>
+                <precio moneda="EUR">320.00</precio>
+                <descuento>10</descuento>
+                <imagen>img/grafica.jpg</imagen>
+                <url_ref>https://nvidia.com/rtx4060</url_ref>
+            </producto>
+
+            <!--PRODUCTO
+            2-->
+            <producto id="p02" stock="si">
+                <nombre>Memoria RAM 16GB DDR5</nombre>
+                <precio moneda="EUR">85.50</precio>
+                <descuento>0</descuento>
+                <imagen>img/ram.jpg</imagen>
+                <url_ref>https://corsair.com/ram16</url_ref>
+            </producto>
+
+            <!--PRODUCTO
+            3-->
+            <producto id="p03" stock="no">
+                <nombre>Procesador i7-13700K</nombre>
+                <precio moneda="EUR">410.00</precio>
+                <descuento>5</descuento>
+                <imagen>img/cpu.jpg</imagen>
+                <url_ref>https://intel.com/i7</url_ref>
+            </producto>
+        </categoria>
+        <!--FIN
+        DE LA PRIMERA CATEGORIA-->
+
+        <!--COMIENZO
+        DE LA SEGUNDA CATEGORIA-->
+        <categoria nombre="Periféricos">
+
+            <!--PRODUCTO
+            1-->
+            <producto id="p04" stock="si">
+                <nombre>Teclado Mecánico RGB</nombre>
+                <precio moneda="EUR">120.00</precio>
+                <descuento>15</descuento>
+                <imagen>img/teclado.jpg</imagen>
+                <url_ref>https://logitech.com/mx-mechanical</url_ref>
+            </producto>
+
+            <!--PRODUCTO
+            2-->
+            <producto id="p05" stock="si">
+                <nombre>Ratón Óptico 16000 DPI</nombre>
+                <precio moneda="EUR">55.00</precio>
+                <descuento>0</descuento>
+                <imagen>img/raton.jpg</imagen>
+                <url_ref>https://razer.com/deathadder</url_ref>
+            </producto>
+
+            <!--PRODUCTO
+            3-->
+            <producto id="p06" stock="si">
+                <nombre>Monitor 27" 4K</nombre>
+                <precio moneda="EUR">350.00</precio>
+                <descuento>20</descuento>
+                <imagen>img/monitor.jpg</imagen>
+                <url_ref>https://dell.com/monitor4k</url_ref>
+            </producto>
+        </categoria>
+        <!--FIN
+        DE LA SEGUNDA CATEGORIA-->
+
+    </catalogo>
+    <!--FIN
+    DEL CATALOGO-->
+</empresa>

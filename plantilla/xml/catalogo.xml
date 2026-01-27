@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--CONEXION CON EL DTD-->
-<!DOCTYPE empresa SYSTEM "../dtd/catalogo.dtd">
 
 <!--COMIENZO
 DEL XML-->
