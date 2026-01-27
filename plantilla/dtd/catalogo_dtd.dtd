@@ -1,0 +1,16 @@
+<!ELEMENT empresa (catalogo)>
+<!ATTLIST empresa nombre NMTOKEN #REQUIRED>
+<!ATTLIST empresa cif NMTOKEN #REQUIRED>
+<!ELEMENT catalogo (categoria+)>
+<!ATTLIST catalogo fecha NMTOKEN #REQUIRED>
+<!ELEMENT categoria (producto+)>
+<!ATTLIST categoria nombre NMTOKEN #REQUIRED>
+<!ELEMENT producto (nombre,precio,descuento,imagen,url_ref)>
+<!ATTLIST producto id NMTOKEN #REQUIRED>
+<!ATTLIST producto stock NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda NMTOKEN #FIXED "EUR">
+<!ELEMENT descuento (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT url_ref (#PCDATA)>
