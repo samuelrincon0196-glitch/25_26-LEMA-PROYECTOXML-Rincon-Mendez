@@ -2376,6 +2376,7 @@
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			box-shadow:#e5474b 2px 0px 10px;
 		}
 
 			.image.fit img {
