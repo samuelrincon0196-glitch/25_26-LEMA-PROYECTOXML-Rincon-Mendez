@@ -2,6 +2,9 @@
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <xsl:variable name="catalogoXml" select="document('../xml/catalogo.xml')"/>
+
+
     <!-- Variable con el IVA (21%) -->
     <xsl:variable name="iva" select="0.21"/>
 
@@ -13,9 +16,23 @@
         <head>
             <meta charset="UTF-8"/>
             <title>Catálogo de productos</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		    <link rel="stylesheet" href="../assets/css/main.css" />
         </head>
 
         <body>
+            <header id="header">
+			<div class="inner">
+				<a href="../index.html" class="logo">Nombre de la web</a>
+				<nav id="nav">
+					<a href="../index.html">Página Principal</a>
+					<a href="#">Catálogo 1</a>
+					<a href="catalogo_2.html">Catálogo 2</a>
+					<a href="contacto.html">Contacto</a>
+				</nav>
+			</div>
+		</header>
+		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
             <h1>Catálogo completo de productos</h1>
 
@@ -23,7 +40,7 @@
             <p>
                 Total de productos:
                 <strong>
-                    <xsl:value-of select="count(//producto)"/>
+                    <xsl:value-of select="count($catalogoXml//producto)"/>
                 </strong>
             </p>
 
@@ -32,20 +49,20 @@
             <!-- Lista de productos -->
             <div class="productos">
 
-                <xsl:for-each select="//producto">
+                <xsl:for-each select="$catalogoXml//producto">
 
                     <div class="producto">
                         <h2>
-                            <xsl:value-of select="nombre"/>
+                            <xsl:value-of select="$catalogoXml/nombre"/>
                         </h2>
 
                         <!-- Imagen -->
                         <img>
                             <xsl:attribute name="src">
-                                <xsl:value-of select="imagen"/>
+                                <xsl:value-of select="$catalogoXml/imagen"/>
                             </xsl:attribute>
                             <xsl:attribute name="alt">
-                                <xsl:value-of select="nombre"/>
+                                <xsl:value-of select="$catalogoXml/nombre"/>
                             </xsl:attribute>
                         </img>
 
@@ -53,7 +70,7 @@
                         <p>
                             Precio base:
                             <strong>
-                                <xsl:value-of select="precio"/> €
+                                <xsl:value-of select="$catalogoXml/precio"/> €
                             </strong>
                         </p>
 
@@ -62,7 +79,7 @@
                             Precio con IVA:
                             <strong>
                                 <xsl:value-of
-                                    select="format-number(precio + (precio * $iva), '0.00')"/> €
+                                    select="format-number($catalogoXml/precio + ($catalogoXml/precio * $iva), '0.00')"/> €
                             </strong>
                         </p>
 
@@ -70,7 +87,7 @@
                         <p>
                             Descuento aplicado:
                             <strong>
-                                <xsl:value-of select="descuento"/> %
+                                <xsl:value-of select="$catalogoXml/descuento"/> %
                             </strong>
                         </p>
 
