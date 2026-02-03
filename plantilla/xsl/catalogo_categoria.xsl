@@ -23,7 +23,7 @@
             <body>
                 <header id="header">
                     <div class="inner">
-                        <a href="../index.html" class="logo">Nombre de la web</a>
+                        <a href="../index.html" class="logo">TechSolution</a>
                         <nav id="nav">
                             <a href="../index.html">Página Principal</a>
                             <a href="PlantillaCatalogo3.xml">Catálogo 1</a>
@@ -45,7 +45,7 @@
                     </p>
                 </div>
 
-                <main>
+                <div class="productos">
                     <xsl:for-each select="$catalogoXml//categoria">
                         <section>
                             <header>
@@ -91,10 +91,11 @@
                                             Ver producto </a>
                                     </p>
                                 </article>
+                                <hr />
                             </xsl:for-each>
                         </section>
                     </xsl:for-each>
-                </main>
+                </div>
 
                 <!-- Footer -->
                 <footer id="footer">

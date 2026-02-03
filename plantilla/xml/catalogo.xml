@@ -17,8 +17,8 @@ DEL XML-->
                 <nombre>Tarjeta Gráfica RTX 4060</nombre>
                 <precio moneda="EUR">320.00</precio>
                 <descuento>10</descuento>
-                <imagen>img/grafica.jpg</imagen>
-                <url_ref>https://nvidia.com/rtx4060</url_ref>
+                <imagen class="imagenes_productos">../images/tarjeta_grafica.jpg</imagen>
+                <url_ref>https://www.pccomponentes.com/asus-dual-geforce-rtx-4060-ti-evo-oc-edition-8gb-gddr6-dlss3?refurbished</url_ref>
             </producto>
 
             <!--PRODUCTO
@@ -27,18 +27,18 @@ DEL XML-->
                 <nombre>Memoria RAM 16GB DDR5</nombre>
                 <precio moneda="EUR">85.50</precio>
                 <descuento>0</descuento>
-                <imagen>img/ram.jpg</imagen>
-                <url_ref>https://corsair.com/ram16</url_ref>
+                <imagen class="imagenes_productos">../images/ram.webp</imagen>
+                <url_ref>https://www.pccomponentes.com/kingston-fury-beast-ddr5-5200mhz-16gb-cl40</url_ref>
             </producto>
 
             <!--PRODUCTO
             3-->
             <producto id="p03" stock="no">
                 <nombre>Procesador i7-13700K</nombre>
-                <precio moneda="EUR">410.00</precio>
+                <precio moneda="EUR">396.00</precio>
                 <descuento>5</descuento>
-                <imagen>img/cpu.jpg</imagen>
-                <url_ref>https://intel.com/i7</url_ref>
+                <imagen class="imagenes_productos">../images/procesador.webp</imagen>
+                <url_ref>https://www.pccomponentes.com/intel-core-i7-13700k-34-ghz-box</url_ref>
             </producto>
         </categoria>
         <!--FIN
@@ -52,20 +52,20 @@ DEL XML-->
             1-->
             <producto id="p04" stock="si">
                 <nombre>Teclado Mecánico RGB</nombre>
-                <precio moneda="EUR">120.00</precio>
+                <precio moneda="EUR">30.90</precio>
                 <descuento>15</descuento>
-                <imagen>img/teclado.jpg</imagen>
-                <url_ref>https://logitech.com/mx-mechanical</url_ref>
+                <imagen class="imagenes_productos">../images/teclado_mecanico.webp</imagen>
+                <url_ref>https://www.pccomponentes.com/mars-gaming-mkminipro-teclado-mecanico-rgb-60-switch-azul-blanco</url_ref>
             </producto>
 
             <!--PRODUCTO
             2-->
             <producto id="p05" stock="si">
                 <nombre>Ratón Óptico 16000 DPI</nombre>
-                <precio moneda="EUR">55.00</precio>
+                <precio moneda="EUR">62.00</precio>
                 <descuento>0</descuento>
-                <imagen>img/raton.jpg</imagen>
-                <url_ref>https://razer.com/deathadder</url_ref>
+                <imagen class="imagenes_productos">../images/raton.webp</imagen>
+                <url_ref>https://www.pccomponentes.com/hyperx-pulsefire-haste-raton-gaming-optico-usb-16000-dpi-negro</url_ref>
             </producto>
 
             <!--PRODUCTO
@@ -74,8 +74,8 @@ DEL XML-->
                 <nombre>Monitor 27" 4K</nombre>
                 <precio moneda="EUR">350.00</precio>
                 <descuento>20</descuento>
-                <imagen>img/monitor.jpg</imagen>
-                <url_ref>https://dell.com/monitor4k</url_ref>
+                <imagen class="imagenes_productos">../images/monitor.webp</imagen>
+                <url_ref>https://www.pccomponentes.com/monitor-dell-27-4k-120hz-ips-freesync-premium-altavoces-ajuste-ergonomico-hdmi-21</url_ref>
             </producto>
         </categoria>
         <!--FIN

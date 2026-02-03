@@ -25,7 +25,7 @@
             <body>
                 <header id="header">
                     <div class="inner">
-                        <a href="../index.html" class="logo">Nombre de la web</a>
+                        <a href="../index.html" class="logo">TechSolution</a>
                         <nav id="nav">
                             <a href="../index.html">Página Principal</a>
                             <a href="#">Catálogo 1</a>
@@ -91,7 +91,8 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="url_ref" />
                                     </xsl:attribute>
-                                    Más información </a>
+                                    Más información 
+                                </a>
                             </p>
 
                             <hr />
