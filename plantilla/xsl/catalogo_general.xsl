@@ -38,10 +38,10 @@
                     <span class="fa fa-bars"></span>
                 </a>
 
-                <h1>Catálogo completo de productos</h1>
+                <h1 class="titulo_catalogo">Catálogo completo de productos</h1>
 
                 <!-- Número total de productos -->
-                <p> Total de productos: <strong>
+                <p class="titulo_catalogo"> Total de productos: <strong>
                         <xsl:value-of select="count($catalogoXml//producto)" />
                     </strong>
                 </p>

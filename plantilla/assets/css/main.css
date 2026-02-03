@@ -3993,3 +3993,10 @@
 	.productos img:hover{
 		transform: scale(1.05);
 	}
+
+	.titulo_catalogo{
+		text-align: center;
+		font-size: 2em;
+		margin-bottom: 20px;
+		color: #e5474b;
+	}

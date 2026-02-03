@@ -38,13 +38,13 @@
 
                 <!-- COMIENZO DE LOS CATALOGOS-->
                 <div>
-                    <h1>Catálogo de productos</h1>
-                    <p> Empresa: <strong>
+                    <h1 class="titulo_catalogo">Catálogo de productos</h1>
+                    <p class="titulo_catalogo"> Empresa: <strong>
                             <xsl:value-of select="$catalogoXml/empresa/@nombre" />
                         </strong>
                     </p>
                 </div>
-
+                <hr />
                 <div class="productos">
                     <xsl:for-each select="$catalogoXml//categoria">
                         <section>
