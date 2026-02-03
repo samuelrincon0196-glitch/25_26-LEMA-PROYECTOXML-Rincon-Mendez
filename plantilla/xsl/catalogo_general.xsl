@@ -101,6 +101,51 @@
 
                 </div>
 
+                <!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <div class="copyright"> 2026 Samuel Rincon - Carlos Méndez García <ul
+                                class="icons">
+                                <li>
+                                    <a href="#" class="icon fa-twitter">
+                                        <span class="label">Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon fa-facebook">
+                                        <span class="label">Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon fa-instagram">
+                                        <span class="label">Instagram</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon fa-github">
+                                        <span class="label">Github</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon fa-dribbble">
+                                        <span class="label">Dribbble</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon fa-tumblr">
+                                        <span class="label">Tumblr</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            Datos de la empresa o asosciación </div>
+                    </div>
+                </footer>
+
+                <!-- Scripts -->
+                <script src="../assets/js/jquery.min.js"></script>
+                <script src="../assets/js/skel.min.js"></script>
+                <script src="../assets/js/util.js"></script>
+                <script src="../assets/js/main.js"></script>
             </body>
         </html>
 

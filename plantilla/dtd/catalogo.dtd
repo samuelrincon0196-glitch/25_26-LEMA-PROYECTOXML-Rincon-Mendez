@@ -1,17 +1,22 @@
+<!-- COMIENZO DEL DTD-->
 <!ELEMENT empresa (catalogo)>
 <!ATTLIST empresa
     nombre CDATA #REQUIRED
     cif CDATA #REQUIRED>
+<!-- ELEMENTOS DE EMPRESA-->
 <!ELEMENT catalogo (categoria+)>
 <!ATTLIST catalogo fecha CDATA #REQUIRED>
 
-<!ELEMENT categoria (producto+)>
+<!-- ELEMENTOS DE CATALOGO-->
+<!ELEMENT categoria (producto*)>
 <!ATTLIST categoria nombre CDATA #REQUIRED>
 
+<!-- ELEMENTOS DE CATEGORIA-->
 <!ELEMENT producto (nombre, precio, descuento?, imagen, url_ref)>
 <!ATTLIST producto
     id ID #REQUIRED
     stock (si|no) "si">
+<!-- ELEMENTOS DE PRODUCTO-->
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT precio (#PCDATA)>
 <!ATTLIST precio moneda CDATA #FIXED "EUR">
