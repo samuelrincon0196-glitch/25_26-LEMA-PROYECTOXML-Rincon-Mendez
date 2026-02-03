@@ -60,7 +60,7 @@
                                                 <xs:attribute name="id" type="xs:string"
                                                     use="required" />
                                                 <xs:attribute name="stock" type="tipoStock"
-                                                    use="required" />
+                                                    use="optional" />
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>

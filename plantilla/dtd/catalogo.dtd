@@ -5,7 +5,7 @@
 <!ELEMENT catalogo (categoria+)>
 <!ATTLIST catalogo fecha CDATA #REQUIRED>
 
-<!ELEMENT categoria (producto*)>
+<!ELEMENT categoria (producto+)>
 <!ATTLIST categoria nombre CDATA #REQUIRED>
 
 <!ELEMENT producto (nombre, precio, descuento?, imagen, url_ref)>
